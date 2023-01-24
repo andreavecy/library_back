@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  pages: 1
+  editorial: MyString
+  genres: MyText
+  author: one
+  published_date: 2023-01-20
+  cover: MyString
+  resumen: MyText
+
+two:
+  name: MyString
+  pages: 1
+  editorial: MyString
+  genres: MyText
+  author: two
+  published_date: 2023-01-20
+  cover: MyString
+  resumen: MyText
