@@ -17,5 +17,6 @@ Rails.application.routes.draw do
     post '/find_user', to: 'sessions#find_user'
   end
 
+  get 'books_authors', to: 'books#books_authors'
 
 end
