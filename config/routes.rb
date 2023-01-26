@@ -18,5 +18,5 @@ Rails.application.routes.draw do
   end
 
   get 'books_authors', to: 'books#books_authors'
-
+  get 'my_favorite_books', to: 'favorite_books#my_favorite_books'
 end

@@ -12,4 +12,5 @@ class User < ApplicationRecord
   validates :document_number, :email, uniqueness: true
   validates :name, :last_name, :email, :document_number, :document_type, :career, presence: true
 
+  has_many :favorite_books
 end

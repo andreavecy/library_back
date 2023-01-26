@@ -38,6 +38,11 @@ class FavoriteBooksController < ApplicationController
     @favorite_book.destroy
   end
 
+  def my_favorite_books
+    @favorite_books = Book.where(FavoriteBook.where(user_id: params[:user_id]).pluck(:book_id))
+    render json: @favorite_books
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_favorite_book
